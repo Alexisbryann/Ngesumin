@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Connector">
+    <CLASSES>
+      <root url="file://D:/Connector" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/Connector/MariaDB" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/build/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/demo/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/generated/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/legacy/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/main/core-api/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/main/core-impl/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/main/protocol-impl/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/main/user-api/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/main/user-impl/java" />
+      <root url="file://D:/Connector/mysql conn/mysql-connector-java-8.0.20/src/test/java" />
+      <root url="file://D:/Connector" />
+    </SOURCES>
+    <jarDirectory url="file://D:/Connector" recursive="false" />
+    <jarDirectory url="file://D:/Connector" recursive="false" type="SOURCES" />
+  </library>
+</component>
