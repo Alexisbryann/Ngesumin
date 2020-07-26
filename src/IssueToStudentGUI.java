@@ -23,9 +23,9 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         new IssueToStudentGUI();
-    }*/
+    }
 
     public IssueToStudentGUI() {
         createJPanels();
@@ -34,16 +34,15 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
         addJPanelsToFrame();
         actionEvent();
         createFrame();
-
     }
 
     public void createFrame() {
-        f.setVisible(true);
         f.setLayout(new GridLayout(1, 0));
-        f.setResizable(false);
-        f.setLocation(400, 70);
         f.setSize(500, 500);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        f.setVisible(true);
     }
 
     public void createJPanels() {
@@ -60,6 +59,7 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
         c.anchor = GridBagConstraints.CENTER;
         c.ipadx = 30;
         c.ipady = 30;
+
         p1 = new JPanel();
         p1.setVisible(true);
         p1.setLayout(new GridLayout(12, 1));
@@ -116,7 +116,6 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
         Books_Issued = new JTextField();
         Books_Issued.setEditable(false);
 
-
         Reset = new JButton("RESET");
         Issue = new JButton("ISSUE BOOK");
         Logout = new JButton("LOGOUT");
@@ -133,6 +132,7 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
                 ExpectedReturnDate.setText(String.valueOf(LocalDate.now().plusDays(21)));
             }
         });
+
         Home.setFont(new Font("Algerian", Font.BOLD, 15));
         Home.setForeground(new Color(155, 17, 30));
         Issue.setFont(new Font("Algerian", Font.BOLD, 15));
@@ -326,15 +326,14 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
                 Books_Issued.setText("");
             }
         if (e.getSource()==Home){
-            f.dispose();
-            new EntryGUI();
+            new IssueBookHome();
         }
         if (e.getSource()==Issue){
             issue();
         }
         if(e.getSource()==Logout){
-            f.dispose();
             new LoginGUI();
+            f.dispose();
         }
     }
 

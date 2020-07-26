@@ -50,10 +50,10 @@ public class IssueToTeacher extends JFrame implements ActionListener {
 
     public void createFrame() {
         f.setLayout(new GridLayout(1, 0));
-        f.setResizable(false);
-        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        f.setLocation(400, 70);
         f.setSize(500, 500);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
+        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
         f.setVisible(true);
     }
 
@@ -307,7 +307,7 @@ public class IssueToTeacher extends JFrame implements ActionListener {
         }
         if (e.getSource() == Home) {
             f.dispose();
-            new EntryGUI();
+            new IssueBookHome();
         }
         if(e.getSource()==Reset){
             ID.setText("");

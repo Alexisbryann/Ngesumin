@@ -5,15 +5,9 @@ import java.awt.event.ActionListener;
 
 public class Register extends JFrame  implements ActionListener{
     JFrame f;
-    JButton RegisterBook ;
-    JButton RegisterTeacher ;
-    JButton RegisterStudent ;
-    JButton RegisterCommunity ;
-    JButton Home;
-    JButton Logout;
-    JPanel p0;
-    JPanel p1;
-    JPanel p2;
+    JButton RegisterBook ,RegisterTeacher ,RegisterStudent ,RegisterCommunity ;
+    JButton Home,Logout;
+    JPanel p0,p1,p2;
 
 
     Register() {
@@ -37,9 +31,12 @@ public class Register extends JFrame  implements ActionListener{
         f = new JFrame("REGISTER");
         f.setLayout(new GridLayout(1, 0));
         f.setResizable(false);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = screenSize.height;
+        int width = screenSize.width;
+        f.setSize(width/2,height/2);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        f.setLocation(400, 70);
-        f.setSize(500, 500);
         f.setVisible(true);
     }
     public void createPanel() {
@@ -123,6 +120,14 @@ public class Register extends JFrame  implements ActionListener{
         if (e.getSource() == RegisterCommunity) {
             f.dispose();
             new RegisterCommunity();
+        }
+        if(e.getSource()== Home){
+            f.dispose();
+            new Home();
+        }
+        if (e.getSource()==Logout){
+            f.dispose();
+            new LoginGUI();
         }
     }
     public static void main (String[] args){

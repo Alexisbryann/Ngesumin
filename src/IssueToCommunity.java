@@ -33,9 +33,9 @@ public class IssueToCommunity extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-   /* public static void main(String[] args) {
+   public static void main(String[] args) {
         new IssueToCommunity();
-    }*/
+    }
 
     public IssueToCommunity() {
 
@@ -48,12 +48,12 @@ public class IssueToCommunity extends JFrame implements ActionListener {
     }
 
     public void createFrame() {
-        f.setVisible(true);
         f.setLayout(new GridLayout(1, 0));
-        f.setResizable(false);
-        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        f.setLocation(400, 70);
         f.setSize(500, 500);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
+        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        f.setVisible(true);
     }
 
     public void createJPanels() {
@@ -202,10 +202,7 @@ public class IssueToCommunity extends JFrame implements ActionListener {
         ExpectedReturnDate.addActionListener(this);
     }
 
-    public void addJPanelsToFrame()
-    {
-        f.add(p0);
-    }
+    public void addJPanelsToFrame() { f.add(p0); }
     public void counter() {
         String sql = "select * from community where ID ='"+ID.getText()+"'";
         String sql3 = "update community set Books_Issued = ? where ID ='"+ID.getText()+"' ";
@@ -263,7 +260,7 @@ public class IssueToCommunity extends JFrame implements ActionListener {
                         JOptionPane.showMessageDialog(null, "SORRY, " + fname.getText() + ' ' + sname.getText() + " HAS CHECKED OUT A MAXIMUM OF 1 BOOK.");
                     }
                     new IssueToCommunity();
-                } catch (SQLException | ClassNotFoundException ex) {
+                } catch (SQLException | ClassNotFoundException  ex) {
                     //ex.printStackTrace();
                     JOptionPane.showMessageDialog(null, "SORRY, BOOK WITH SERIAL NUMBER '" + Serial_Number.getText() + "' HAS ALREADY BEEN ISSUED. ");
                 }
@@ -273,11 +270,35 @@ public class IssueToCommunity extends JFrame implements ActionListener {
     public void checkempty(){
         if ((ID.getText().trim().equals("")) || (fname.getText().trim().equals("")) || (sname.getText().trim().equals("")) || (surname.getText().trim().equals(""))||(Phone.getText().trim().equals(""))||(Status.getText().trim().equals(""))||(Serial_Number.getText().trim().equals(""))||(BookTittle.getText().trim().equals(""))||(BookType.getText().trim().equals(""))||(DateOfIssue.getText().trim().equals(""))||(ExpectedReturnDate.getText().trim().equals(""))||(Books_Issued.getText().trim().equals(""))) {
             JOptionPane.showMessageDialog(null,"ALL FIELDS MUST BE ENTERED!");
+
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == BookTittle) {
+            {
+                try {
+                    Class.forName(Driver);
+                    conn2 = DriverManager.getConnection(url, user, password);
+                    PreparedStatement ret = conn2.prepareStatement("SELECT * FROM books WHERE SERIAL_NUMBER = ?");
+                    ret.setString(1, Serial_Number.getText().toUpperCase());
+                    ResultSet rs = ret.executeQuery();
+
+                    if (rs.next()) {
+                        BookTittle.setText(rs.getString(1).toUpperCase());
+                        BookType.setText(rs.getString(5).toUpperCase());
+
+
+                    }
+                    else {
+                        JOptionPane.showMessageDialog(null, "SORRY, NO BOOK FOUND!");
+                    }
+                } catch (SQLException|ClassNotFoundException eq) {
+                    eq.printStackTrace();
+                }
+            }
+        }
         if (e.getSource() == fname) {
             {
                 try {
@@ -302,10 +323,6 @@ public class IssueToCommunity extends JFrame implements ActionListener {
                 }
             }
         }
-        if (e.getSource() == Home) {
-            f.dispose();
-            new EntryGUI();
-        }
         if(e.getSource()==Reset){
             ID.setText("");
             fname.setText("");
@@ -317,35 +334,16 @@ public class IssueToCommunity extends JFrame implements ActionListener {
             BookType.setText("");
             ExpectedReturnDate.setText("");
         }
+        if (e.getSource() == Home) {
+            f.dispose();
+            new IssueBookHome();
+        }
         if (e.getSource() == Issue) {
             issue();
         }
         if (e.getSource() == Logout) {
             f.dispose();
             new LoginGUI();
-        }
-        if (e.getSource() == BookTittle) {
-            {
-                try {
-                    Class.forName(Driver);
-                    conn2 = DriverManager.getConnection(url, user, password);
-                    PreparedStatement ret = conn2.prepareStatement("SELECT * FROM books WHERE SERIAL_NUMBER = ?");
-                    ret.setString(1, Serial_Number.getText().toUpperCase());
-                    ResultSet rs = ret.executeQuery();
-
-                    if (rs.next()) {
-                        BookTittle.setText(rs.getString(1).toUpperCase());
-                        BookType.setText(rs.getString(5).toUpperCase());
-
-
-                    }
-                    else {
-                        JOptionPane.showMessageDialog(null, "SORRY, NO BOOK FOUND!");
-                    }
-                } catch (SQLException|ClassNotFoundException eq) {
-                    eq.printStackTrace();
-                }
-            }
         }
     }
 

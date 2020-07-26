@@ -18,11 +18,11 @@ public class IssueBookHome extends JFrame implements ActionListener {
     }
     public void createFrame(){
         f.setLayout(new GridLayout(2,0));
-        f.setLocation(500, 200);
         f.setSize(500, 500);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
         f.setVisible(true);
-        f.setResizable(false);
     }
     public void createJPanel(){
         p1 = new JPanel();
@@ -61,11 +61,37 @@ public class IssueBookHome extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if (e.getSource()==student) {
-            f.dispose();
             new IssueToStudentGUI();
+            f.dispose();
         }
+        if (e.getSource()==teacher) {
+            new IssueToTeacher();
+            f.dispose();
+        }
+        if (e.getSource()==community) {
+            new IssueToCommunity();
+            f.dispose();
+        }
+        if (e.getSource()==student) {
+            new IssueToStudentGUI();
+            f.dispose();
+        }
+        if (e.getSource()==home) {
+            new Home();
+            f.dispose();
+        }
+        if (e.getSource()==logout) {
+            new LoginGUI();
+            f.dispose();
+        }
+        if (e.getSource()==quit) {
+            f.dispose();
+        }
+
+
+
     }
-  /*  public static void main(String[] args){
+    public static void main(String[] args){
         new IssueBookHome();
-    }*/
+    }
 }

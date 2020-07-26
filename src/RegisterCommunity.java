@@ -234,7 +234,7 @@ public class RegisterCommunity extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == Home) {
             f.dispose();
-            new EntryGUI();
+            new Register();
         }
         if (e.getSource()==delete){
             try {

@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 @SuppressWarnings("serial")
@@ -79,9 +78,9 @@ public class LoginGUI extends JFrame implements ActionListener {
 
         f= new JFrame ("NG'ESUMIN GIRLS SECONDARY SCHOOL"); //Overall window
         f.setForeground(new Color(212,175,55));
-        f.setLocation(500,300);
         f.setSize(500,300);
         f.setResizable(false);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
         f.setBackground(Color.DARK_GRAY);
         f.setLayout(new GridLayout(4,0));
@@ -102,11 +101,12 @@ public class LoginGUI extends JFrame implements ActionListener {
             String paswd = Password.getText();//captures and stores JPassword input
             if (Uname.equalsIgnoreCase("Ngesumin") && paswd.equalsIgnoreCase("Ngesumin123")) {//condition equating password and Username fields
                 f.dispose();
-                new EntryGUI();//opens a new frame called Entry
+                new Home();//opens a new frame called Entry
 
             }else {
                 JOptionPane.showMessageDialog(null, "Wrong Password/Username");//Message dialog pops up
             }
+            f.dispose();
         }
         if (e.getSource() == Reset) { //conditions for reset button
             Username.setText("");//resets username JTextField
@@ -126,7 +126,7 @@ public class LoginGUI extends JFrame implements ActionListener {
     public static void main(String[] args) { //main method where the program runs from
         //thread
         // Let the constructor do the job
-        SwingUtilities.invokeLater(() -> new LoginGUI());
+        SwingUtilities.invokeLater(LoginGUI::new);
 
     }
 

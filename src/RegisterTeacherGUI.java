@@ -1,9 +1,6 @@
-import javafx.scene.control.skin.TableColumnHeader;
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -264,7 +261,7 @@ public class RegisterTeacherGUI extends Frame implements ActionListener{
         }
         if (e.getSource()==Home){
             f.dispose();
-            new EntryGUI();
+            new Register();
         }
     }
     public static void main(String[] args){

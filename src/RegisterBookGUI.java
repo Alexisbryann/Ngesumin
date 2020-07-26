@@ -20,6 +20,8 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
     JButton Home = new JButton("HOME");
     JButton Logout = new JButton("LOGOUT");
     JButton Reset = new JButton("RESET");
+    JButton delete = new JButton("DELETE BOOK");
+
 
     Connection conn = null;
     String Driver = "org.h2.Driver";
@@ -106,6 +108,8 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
         Reset.setForeground(new Color(155, 17, 30));
         Logout.setFont(new Font("Algerian", Font.BOLD, 18));
         Logout.setForeground(new Color(155, 17, 30));
+        delete.setFont(new Font("Algerian", Font.BOLD, 18));
+        delete.setForeground(new Color(155, 17, 30));
 
         Border border1 = BorderFactory.createEtchedBorder(new Color(155,17,30),new Color(0,0,49));
         p0.setBorder(border1);
@@ -153,14 +157,17 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
         }
         p4.add(scroll);
 
-        p2.add(Home);
-        Home.addActionListener(this);
         p2.add(Register);
         Register.addActionListener(this);
         p2.add(Reset);
         Reset.addActionListener(this);
+        p2.add(delete);
+        delete.addActionListener(this);
+        p2.add(Home);
+        Home.addActionListener(this);
         p2.add(Logout);
         Logout.addActionListener(this);
+
 
         Border border5 = BorderFactory.createEtchedBorder(new Color(155, 17, 30), new Color(0, 0, 49));
         p0.setBorder(border5);
@@ -218,13 +225,36 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
             }
         }
         public void actionPerformed (ActionEvent e) {
+
+            if (e.getSource()==delete){
+                try {
+                    int row = table.getSelectedRow();
+                    String idd = (String) table.getModel().getValueAt(row,0);
+                    String delRow = "delete from book where id = '"+idd+"'";
+
+                    Class.forName(Driver);
+                    conn = DriverManager.getConnection(url, user, password);
+                    PreparedStatement DeleteTeacher = conn.prepareStatement(delRow);
+
+                    DeleteTeacher.executeUpdate();
+                    JOptionPane.showMessageDialog(null, "BOOK SUCCESSFULLY DELETED!");
+                    f.dispose();
+                    new RegisterTeacherGUI();
+                }
+                catch (SQLException | ClassNotFoundException | ArrayIndexOutOfBoundsException ex) {
+                    JOptionPane.showMessageDialog(null, "ROW TO BE DELETED HAS NOT BEEN SELECTED.");
+                    //ex.printStackTrace();
+                }
+            }
+
+
             if (e.getSource() == Logout) {
                 f.dispose();
                 new LoginGUI();
             }
             if (e.getSource() == Home) {
                 f.dispose();
-                new EntryGUI();
+                new Register();
             }
             if (e.getSource() == Reset) {
                 BookTitle.setText("");

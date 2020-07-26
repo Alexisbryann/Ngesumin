@@ -231,7 +231,7 @@ public class RegisterStudentGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == home) {
             f.dispose();
-            new EntryGUI();
+            new Register();
         }
         if (e.getSource()==delete){
         try {
