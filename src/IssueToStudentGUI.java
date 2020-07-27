@@ -23,18 +23,19 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         new IssueToStudentGUI();
     }
-
     public IssueToStudentGUI() {
-        createJPanels();
         createComponents();
+        createJPanels();
         addComponentsToJPanels();
         addJPanelsToFrame();
         actionEvent();
         createFrame();
     }
+
+
 
     public void createFrame() {
         f.setLayout(new GridLayout(1, 0));
@@ -59,7 +60,6 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
         c.anchor = GridBagConstraints.CENTER;
         c.ipadx = 30;
         c.ipady = 30;
-
         p1 = new JPanel();
         p1.setVisible(true);
         p1.setLayout(new GridLayout(12, 1));
@@ -74,6 +74,7 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
         Border border2 = BorderFactory.createEtchedBorder(new Color(155, 17, 30), new Color(8));
         p2.setBorder(border2);
         p2.setLayout(new GridBagLayout());
+
         p0.add(p1, c);
         p0.add(p2, c);
     }
@@ -219,7 +220,7 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
     }
     public void issue() {
         {
-            checkempty();
+            empty();
             if (Status.getText().equalsIgnoreCase("defaulter")) {
                 JOptionPane.showMessageDialog(null, "CAN NOT ISSUE BOOK TO A DEFAULTER.");
             } else {
@@ -250,13 +251,13 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
                     }
                     new IssueToStudentGUI();
                 } catch (SQLException | ClassNotFoundException ex) {
-                    //ex.printStackTrace();
+//                    ex.printStackTrace();
                     JOptionPane.showMessageDialog(null, "SORRY, BOOK WITH SERIAL NUMBER '" + Serial_Number.getText() + "' HAS ALREADY BEEN ISSUED. ");
                 }
             }
         }
     }
-    public void checkempty(){
+    public void empty(){
         if ((ID.getText().trim().equals("")) || (fname.getText().trim().equals("")) || (sname.getText().trim().equals("")) || (surname.getText().trim().equals(""))||(Form.getText().trim().equals(""))||(Status.getText().trim().equals(""))||(Serial_Number.getText().trim().equals(""))||(BookTittle.getText().trim().equals(""))||(BookType.getText().trim().equals(""))||(DateOfIssue.getText().trim().equals(""))||(ExpectedReturnDate.getText().trim().equals(""))||(Books_Issued.getText().trim().equals(""))) {
             JOptionPane.showMessageDialog(null,"ALL FIELDS MUST BE ENTERED!");
         }
@@ -276,8 +277,6 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
                     if (rs.next()) {
                         BookTittle.setText(rs.getString(1).toUpperCase());
                         BookType.setText(rs.getString(5).toUpperCase());
-
-
                     }
                     else {
                         JOptionPane.showMessageDialog(null, "SORRY, NO BOOK FOUND!");
@@ -327,9 +326,11 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
             }
         if (e.getSource()==Home){
             new IssueBookHome();
+            f.dispose();
         }
         if (e.getSource()==Issue){
             issue();
+            f.dispose();
         }
         if(e.getSource()==Logout){
             new LoginGUI();

@@ -59,7 +59,6 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
         p1.add(l1);
         p1.add(BookTitle);
 
-
         JLabel l2 = new JLabel("AUTHOR: ");
         Author = new JTextField();
         Author.setEditable(true);
@@ -254,7 +253,7 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
             }
             if (e.getSource() == Home) {
                 f.dispose();
-                new Register();
+                new community();
             }
             if (e.getSource() == Reset) {
                 BookTitle.setText("");

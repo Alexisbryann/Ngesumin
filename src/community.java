@@ -3,14 +3,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Register extends JFrame  implements ActionListener{
+public class community extends JFrame  implements ActionListener{
     JFrame f;
     JButton RegisterBook ,RegisterTeacher ,RegisterStudent ,RegisterCommunity ;
     JButton Home,Logout;
     JPanel p0,p1,p2;
 
 
-    Register() {
+    community() {
         createComponents();
         createPanel();
         addComponentsToPanel();
@@ -131,7 +131,7 @@ public class Register extends JFrame  implements ActionListener{
         }
     }
     public static void main (String[] args){
-        new Register();
+        new community();
     }
 }
 

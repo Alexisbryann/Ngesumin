@@ -261,7 +261,7 @@ public class RegisterTeacherGUI extends Frame implements ActionListener{
         }
         if (e.getSource()==Home){
             f.dispose();
-            new Register();
+            new community();
         }
     }
     public static void main(String[] args){

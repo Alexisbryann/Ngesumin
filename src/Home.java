@@ -1,5 +1,3 @@
-import com.mysql.cj.log.Log;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -28,6 +26,7 @@ public class Home extends JFrame implements ActionListener {
         int height = screenSize.height;
         int width = screenSize.width;
         f.setSize(width/2,height/2);
+        f.setResizable(false);
         f.setLocationRelativeTo(null);
         f.setVisible(true);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -61,9 +60,7 @@ public class Home extends JFrame implements ActionListener {
 
         p0.add(p1,c);
         p0.add(p2,c);
-
     }
-
     private void createPanel() {
         p0 = new JPanel(new GridBagLayout());
         c = new GridBagConstraints();
@@ -120,25 +117,19 @@ public class Home extends JFrame implements ActionListener {
 
         if (e.getSource()== Register){
             f.dispose();
-            new Register();
-        }
-        if (e.getSource() == IssueBook){
-            f.dispose();
-            new IssueBookHome ();
-        }
-        if (e.getSource() == IssueBook){
+            new community();
+        }if (e.getSource() == IssueBook){
             f.dispose();
             new IssueBookHome();
-        }
-        if (e.getSource()==Logout){
+        }if (e.getSource()==Logout){
             f.dispose();
             new LoginGUI();
-        }
-        if(e.getSource()==Quit){
+        }if(e.getSource()==Quit){
             f.dispose();
+        }if (e.getSource()==Reports){
+
         }
     }
-
     public static void main(String[] args){
         new Home();
     }

@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,6 +36,9 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -42,7 +46,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
-  <component name="RunManager" selected="Application.IssueBookHome">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RegisterBookGUITest.registerBook">
     <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Home" />
       <module name="Ngesumin" />
@@ -57,20 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IssueToCommunity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IssueToCommunity" />
-      <module name="Ngesumin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IssueToStudentGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IssueToStudentGUI" />
-      <module name="Ngesumin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LoginGUI" />
       <module name="Ngesumin" />
@@ -78,13 +76,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterBookGUITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ngesumin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterBookGUITest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterBookGUITest.registerBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ngesumin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterBookGUITest" />
+      <option name="METHOD_NAME" value="registerBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IssueBookHome" />
-        <item itemvalue="Application.IssueToStudentGUI" />
-        <item itemvalue="Application.Home" />
+        <item itemvalue="JUnit.RegisterBookGUITest.registerBook" />
+        <item itemvalue="JUnit.RegisterBookGUITest" />
         <item itemvalue="Application.LoginGUI" />
-        <item itemvalue="Application.IssueToCommunity" />
+        <item itemvalue="Application.IssueBookHome" />
+        <item itemvalue="Application.Home" />
       </list>
     </recent_temporary>
   </component>
@@ -133,10 +150,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="309" y="0" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1591294104677" />
-    <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1595753743764">
+    <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1595872717002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1595753743764" />
+    <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1595872717002" />
     <state x="321" y="206" width="638" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590862542325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -169,22 +186,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="450" y="184" width="309" height="358" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1593801177341" />
-    <state width="1225" height="162" key="GridCell.Tab.0.bottom" timestamp="1595772774317">
+    <state width="1225" height="93" key="GridCell.Tab.0.bottom" timestamp="1595872865706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595772774317" />
-    <state width="1225" height="162" key="GridCell.Tab.0.center" timestamp="1595772774317">
+    <state width="1225" height="93" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
+    <state width="1225" height="93" key="GridCell.Tab.0.center" timestamp="1595872865706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1595772774317" />
-    <state width="1225" height="162" key="GridCell.Tab.0.left" timestamp="1595772774317">
+    <state width="1225" height="93" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
+    <state width="1225" height="93" key="GridCell.Tab.0.left" timestamp="1595872865706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1595772774317" />
-    <state width="1225" height="162" key="GridCell.Tab.0.right" timestamp="1595772774317">
+    <state width="1225" height="93" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
+    <state width="1225" height="93" key="GridCell.Tab.0.right" timestamp="1595872865706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1595772774317" />
+    <state width="1225" height="93" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
     <state width="1225" height="187" key="GridCell.Tab.1.bottom" timestamp="1595771945189">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -201,22 +218,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1225" height="187" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1595771945189" />
-    <state x="0" y="0" width="1280" height="680" key="SettingsEditor" timestamp="1595757740937">
+    <state x="0" y="0" width="1280" height="680" key="SettingsEditor" timestamp="1595869649783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="1280" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1595757740937" />
+    <state x="0" y="0" width="1280" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1595869649783" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591094735407">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1591094735407" />
-    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588778858907">
+    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595868233183">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1588778858907" />
+    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1595868233183" />
     <state x="417" y="238" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595772986538">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="238" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1595772986538" />
+    <state x="410" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595868300513">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="410" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1595868300513" />
     <state x="0" y="0" key="new project wizard" timestamp="1591705213934">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

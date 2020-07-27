@@ -270,7 +270,6 @@ public class IssueToCommunity extends JFrame implements ActionListener {
     public void checkempty(){
         if ((ID.getText().trim().equals("")) || (fname.getText().trim().equals("")) || (sname.getText().trim().equals("")) || (surname.getText().trim().equals(""))||(Phone.getText().trim().equals(""))||(Status.getText().trim().equals(""))||(Serial_Number.getText().trim().equals(""))||(BookTittle.getText().trim().equals(""))||(BookType.getText().trim().equals(""))||(DateOfIssue.getText().trim().equals(""))||(ExpectedReturnDate.getText().trim().equals(""))||(Books_Issued.getText().trim().equals(""))) {
             JOptionPane.showMessageDialog(null,"ALL FIELDS MUST BE ENTERED!");
-
         }
     }
 
