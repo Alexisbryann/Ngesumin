@@ -3,6 +3,11 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Ngesumin:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="12efceda-e2d3-46a9-9a30-9f08dfc982de" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -39,12 +43,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -54,27 +58,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegisterBookGUITest.registerBook">
-    <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Home" />
-      <module name="Ngesumin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IssueBookHome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IssueBookHome" />
-      <module name="Ngesumin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JAR Application.Ngesumin_jar.jar">
     <configuration name="LoginGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LoginGUI" />
       <module name="Ngesumin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="RegisterBookGUITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ngesumin" />
@@ -95,19 +83,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Ngesumin.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Ngesumin_jar/Ngesumin.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ngesumin_jar.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Ngesumin_jar/Ngesumin_jar.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_181" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LoginGUI" />
+      <item itemvalue="JAR Application.Ngesumin.jar" />
+      <item itemvalue="JAR Application.Ngesumin_jar.jar" />
+      <item itemvalue="JUnit.RegisterBookGUITest" />
+      <item itemvalue="JUnit.RegisterBookGUITest.registerBook" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Ngesumin_jar.jar" />
+        <item itemvalue="JAR Application.Ngesumin.jar" />
+        <item itemvalue="Application.LoginGUI" />
         <item itemvalue="JUnit.RegisterBookGUITest.registerBook" />
         <item itemvalue="JUnit.RegisterBookGUITest" />
-        <item itemvalue="Application.LoginGUI" />
-        <item itemvalue="Application.IssueBookHome" />
-        <item itemvalue="Application.Home" />
       </list>
     </recent_temporary>
   </component>
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -142,42 +144,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1595751610949" />
-    <state x="233" y="0" key="#Project_Structure" timestamp="1588778353944">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1588778353944" />
     <state x="309" y="0" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1591294104677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="309" y="0" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1591294104677" />
+    <state x="77" y="0" width="1153" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598610316388">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="77" y="0" width="1153" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1598610316388" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595936089961">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1595936089961" />
     <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1595872717002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1595872717002" />
+    <state x="308" y="93" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598606738804">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="308" y="93" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1598606738804" />
     <state x="321" y="206" width="638" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590862542325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="206" width="638" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1590862542325" />
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589902595913">
+    <state x="371" y="53" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1595948293092">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1589902595913" />
-    <state x="371" y="53" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1590434011156">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="53" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.680@0.0.1280.680" timestamp="1590434011156" />
+    <state x="371" y="53" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.680@0.0.1280.680" timestamp="1595948293092" />
     <state x="399" y="176" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591093666409">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="399" y="176" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1591093666409" />
+    <state width="736" height="546" key="DebuggerActiveHint" timestamp="1595934578670">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="736" height="546" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1595934578670" />
     <state x="395" y="0" key="DetectedRootsChooserDialog" timestamp="1591716555072">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="395" y="0" key="DetectedRootsChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1591716555072" />
-    <state x="222" y="0" key="FileChooserDialogImpl" timestamp="1593799444064">
+    <state x="173" y="33" width="634" height="613" key="EnvironmentVariablesDialog" timestamp="1598606528655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="222" y="0" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593799444064" />
+    <state x="173" y="33" width="634" height="613" key="EnvironmentVariablesDialog/0.0.1280.680@0.0.1280.680" timestamp="1598606528655" />
+    <state x="222" y="0" key="FileChooserDialogImpl" timestamp="1598610279795">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="222" y="0" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1598610279795" />
     <state x="429" y="239" key="Github.CreateGistDialog" timestamp="1593801221422">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -186,42 +200,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="450" y="184" width="309" height="358" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1593801177341" />
-    <state width="1225" height="93" key="GridCell.Tab.0.bottom" timestamp="1595872865706">
+    <state width="1225" height="263" key="GridCell.Tab.0.bottom" timestamp="1598612492674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="93" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
-    <state width="1225" height="93" key="GridCell.Tab.0.center" timestamp="1595872865706">
+    <state width="1225" height="263" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598612492674" />
+    <state width="1225" height="263" key="GridCell.Tab.0.center" timestamp="1598612492674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="93" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
-    <state width="1225" height="93" key="GridCell.Tab.0.left" timestamp="1595872865706">
+    <state width="1225" height="263" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598612492674" />
+    <state width="1225" height="263" key="GridCell.Tab.0.left" timestamp="1598612492674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="93" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
-    <state width="1225" height="93" key="GridCell.Tab.0.right" timestamp="1595872865706">
+    <state width="1225" height="263" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598612492674" />
+    <state width="1225" height="263" key="GridCell.Tab.0.right" timestamp="1598612492674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="93" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1595872865706" />
-    <state width="1225" height="187" key="GridCell.Tab.1.bottom" timestamp="1595771945189">
+    <state width="1225" height="263" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598612492674" />
+    <state width="1225" height="205" key="GridCell.Tab.1.bottom" timestamp="1595956294406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="187" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595771945189" />
-    <state width="1225" height="187" key="GridCell.Tab.1.center" timestamp="1595771945189">
+    <state width="1225" height="205" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1595956294406" />
+    <state width="1225" height="205" key="GridCell.Tab.1.center" timestamp="1595956294406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="187" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1595771945189" />
-    <state width="1225" height="187" key="GridCell.Tab.1.left" timestamp="1595771945189">
+    <state width="1225" height="205" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1595956294406" />
+    <state width="1225" height="205" key="GridCell.Tab.1.left" timestamp="1595956294406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="187" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1595771945189" />
-    <state width="1225" height="187" key="GridCell.Tab.1.right" timestamp="1595771945189">
+    <state width="1225" height="205" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1595956294406" />
+    <state width="1225" height="205" key="GridCell.Tab.1.right" timestamp="1595956294406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1225" height="187" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1595771945189" />
-    <state x="0" y="0" width="1280" height="680" key="SettingsEditor" timestamp="1595869649783">
+    <state width="1225" height="205" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1595956294406" />
+    <state x="0" y="0" width="1280" height="680" key="SettingsEditor" timestamp="1598609632388">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="1280" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1595869649783" />
+    <state x="0" y="0" width="1280" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1598609632388" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1591094735407">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -250,9 +264,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" width="840" height="1034" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1591026459912" />
-    <state x="163" y="10" width="1009" height="676" key="search.everywhere.popup" timestamp="1591348053273">
+    <state x="163" y="10" width="1009" height="676" key="search.everywhere.popup" timestamp="1595950450590">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="163" y="10" width="1009" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591348053273" />
+    <state x="163" y="10" width="1009" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1595950450590" />
   </component>
 </project>

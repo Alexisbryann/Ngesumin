@@ -33,9 +33,9 @@ public class IssueToTeacher extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-    public static void main(String[] args) {
-        new IssueToTeacher();
-    }
+//    public static void main(String[] args) {
+//        new IssueToTeacher();
+//    }
 
     public IssueToTeacher() {
 

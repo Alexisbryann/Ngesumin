@@ -97,7 +97,7 @@ public class LoginGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) { //action events for the 3 buttons
 
         if (e.getSource() == Login) { // conditions for Login button
-            String Uname = Username.getText();//captures and stores JTextFiels Username input
+            String Uname = Username.getText();//captures and stores JTextFields Username input
             String paswd = Password.getText();//captures and stores JPassword input
             if (Uname.equalsIgnoreCase("Ngesumin") && paswd.equalsIgnoreCase("Ngesumin123")) {//condition equating password and Username fields
                 f.dispose();

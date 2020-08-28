@@ -265,9 +265,9 @@ public class RegisterStudentGUI extends JFrame implements ActionListener {
             checkempty();
         }
         }
-        public static void main (String[]args){
-            new RegisterStudentGUI();
-        }
+//        public static void main (String[]args){
+//            new RegisterStudentGUI();
+//        }
     }
 
 

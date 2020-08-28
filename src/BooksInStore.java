@@ -19,7 +19,7 @@ public class BooksInStore extends JFrame implements ActionListener {
     final String Driver = "org.h2.Driver";
     final String[] columnNames = {"BOOK TITLE", "BOOK TYPE", "AUTHOR", "SERIAL NUMBER", "YEAR"};
 
-    public static void main (String[] args){ new BooksInStore();}
+//    public static void main (String[] args){ new BooksInStore();}
 
     public BooksInStore() {
         createPanel();

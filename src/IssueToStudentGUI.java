@@ -23,9 +23,9 @@ public class IssueToStudentGUI extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-    public static void main (String[] args) {
-        new IssueToStudentGUI();
-    }
+//    public static void main (String[] args) {
+//        new IssueToStudentGUI();
+//    }
     public IssueToStudentGUI() {
         createComponents();
         createJPanels();

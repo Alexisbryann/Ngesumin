@@ -130,8 +130,8 @@ public class community extends JFrame  implements ActionListener{
             new LoginGUI();
         }
     }
-    public static void main (String[] args){
-        new community();
-    }
+//    public static void main (String[] args){
+//        new community();
+//    }
 }
 

@@ -268,7 +268,7 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
                 }
             }
         }
-    public static void main(String[] args){
-        new RegisterBookGUI();
-    }
+//    public static void main(String[] args){
+//        new RegisterBookGUI();
+//    }
 }

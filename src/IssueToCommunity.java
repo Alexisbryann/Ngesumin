@@ -33,9 +33,9 @@ public class IssueToCommunity extends JFrame implements ActionListener {
     PreparedStatement issuebook = null;
     int noIssued;
 
-   public static void main(String[] args) {
-        new IssueToCommunity();
-    }
+//   public static void main(String[] args) {
+//        new IssueToCommunity();
+//    }
 
     public IssueToCommunity() {
 

@@ -264,8 +264,8 @@ public class RegisterTeacherGUI extends Frame implements ActionListener{
             new community();
         }
     }
-    public static void main(String[] args){
-        new RegisterTeacherGUI();
-    }
+//    public static void main(String[] args){
+//        new RegisterTeacherGUI();
+//    }
 
 }

@@ -32,9 +32,9 @@ public class ReturnTeacher extends JFrame implements ActionListener {
     String user = "brayo";
     String password = "brayo";
 
-    public static void main(String[] args) {
-        new ReturnTeacher();
-    }
+//    public static void main(String[] args) {
+//        new ReturnTeacher();
+//    }
 
     public ReturnTeacher() {
 

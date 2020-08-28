@@ -273,7 +273,7 @@ public class RegisterCommunity extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String[] args) {
-        new RegisterCommunity();
-    }
+//    public static void main(String[] args) {
+//        new RegisterCommunity();
+//    }
 }

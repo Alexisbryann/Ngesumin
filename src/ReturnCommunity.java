@@ -21,9 +21,9 @@ public class ReturnCommunity extends JFrame implements ActionListener {
     String user = "brayo";
     String password = "brayo";
 
-    public static void main(String[] args) {
-        new ReturnCommunity();
-    }
+//    public static void main(String[] args) {
+//        new ReturnCommunity();
+//    }
 
     public ReturnCommunity() {
 

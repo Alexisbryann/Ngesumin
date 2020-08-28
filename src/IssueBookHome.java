@@ -10,9 +10,9 @@ public class IssueBookHome extends JFrame implements ActionListener {
     private GridBagConstraints mConstraints;
 
 
-    public static void main(String[] args){
-        new IssueBookHome();
-    }
+//    public static void main(String[] args){
+//        new IssueBookHome();
+//    }
 
     IssueBookHome(){
         createComponents();
