@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class RegisterTeacherGUI extends Frame implements ActionListener{
-    JFrame f = new JFrame("REGISTER TEACHER");
+    JFrame f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
     JPanel j0 ;
     JPanel j1 = new JPanel();
     JPanel j2 = new JPanel();
@@ -128,8 +128,8 @@ public class RegisterTeacherGUI extends Frame implements ActionListener{
         j0.add(j2,c);
 
         j3.setLayout(new BorderLayout());
-        Border border4 = BorderFactory.createLineBorder(new Color(0,0,49),2);
-        j3.setBorder(border4);
+//        Border border3 = BorderFactory.createEtchedBorder(new Color(155,17,30),new Color(0,0,49));
+        j3.setBorder(border3);
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnNames);
         table = new JTable();
@@ -261,7 +261,7 @@ public class RegisterTeacherGUI extends Frame implements ActionListener{
         }
         if (e.getSource()==Home){
             f.dispose();
-            new community();
+            new RegisterHome();
         }
     }
 //    public static void main(String[] args){

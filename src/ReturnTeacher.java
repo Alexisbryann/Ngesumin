@@ -8,7 +8,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 
 public class ReturnTeacher extends JFrame implements ActionListener {
-    JFrame f = new JFrame("TEACHER RETURN");
+    JFrame f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
     JPanel p0,p1, p2;
     JLabel l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11,l12;
     JTextField ID;
@@ -323,7 +323,7 @@ public class ReturnTeacher extends JFrame implements ActionListener {
         }
         if (e.getSource() == Home) {
             f.dispose();
-            new Home();
+            new ReturnGUI();
         }
     }
 }

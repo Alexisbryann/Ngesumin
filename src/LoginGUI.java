@@ -32,15 +32,13 @@ public class LoginGUI extends JFrame implements ActionListener {
         cp3.setVisible(true);
 
         //Declaring & adding JLabels,JTextFields and JPasswords to JPanel cp
-        welcome = new JLabel();
-        //welcome.setIcon(icon);
-        welcome.setSize(1024,768);
-        welcome.setBounds(10,10,500,20);
+        welcome = new JLabel("NGESUMIN GIRLS SECONDARY SCHOOL");
+        welcome.setFont(new Font("algerian",Font.BOLD,25));
+        welcome.setForeground(new Color(0,0,49));
         cp3.add(welcome);
 
         cp.add(username);//Adding label to the Username field
         username.setVerticalTextPosition(3);
-        //username.setForeground(new Color(155,17,30));
         username.setFont(new Font("algerian",Font.BOLD,15));
         Username = new JTextField(15);//creating a new JTextField for Username
         Username.setEditable(true);//declaring JTextField field as editable
@@ -48,7 +46,6 @@ public class LoginGUI extends JFrame implements ActionListener {
 
         //Adding label to the password field
         cp.add(password);
-       // password.setForeground(new Color(155,17,30));
         password.setFont(new Font("algerian",Font.BOLD,15));
         Password = new JPasswordField(15);//creating a new JPassword field
         Password.setEditable(true);//declaring JPassword field as editable
@@ -62,22 +59,22 @@ public class LoginGUI extends JFrame implements ActionListener {
         showPassword.addActionListener(this);//Action listener for JCheckBox show password
 
         cp1.add(Login = new JButton ("LOGIN"));//adding & declaring Login Button in JPanel cp1
-        Login.setFont(new Font("algerian",Font.BOLD,15));
+        Login.setFont(new Font("algerian",Font.BOLD,20));
         Login.setForeground(new Color(155,17,30));
         Login.addActionListener(this);//action listener to for the Login Button
 
         cp1.add(Reset = new JButton ("RESET"));//adding & declaring Reset Button in JPanel cp1
-        Reset.setFont(new Font("algerian", Font.BOLD,15));
+        Reset.setFont(new Font("algerian", Font.BOLD,20));
         Reset.setForeground(new Color(155,17,30));
         Reset.addActionListener(this);//action listener for the Reset Button
 
         cp1.add(Quit = new JButton("QUIT"));
-        Quit.setFont(new Font("algerian",Font.BOLD,15));
+        Quit.setFont(new Font("algerian",Font.BOLD,20));
         Quit.setForeground(new Color(155,17,30));
         Quit.addActionListener(this);
 
-        f= new JFrame ("NG'ESUMIN GIRLS SECONDARY SCHOOL"); //Overall window
-        f.setForeground(new Color(212,175,55));
+        f= new JFrame ("NGSS LIBRARY MANAGEMENT SYSTEM"); //Overall window
+//        f.setForeground(new Color(212,175,55));
         f.setSize(500,300);
         f.setResizable(false);
         f.setLocationRelativeTo(null);
@@ -88,8 +85,7 @@ public class LoginGUI extends JFrame implements ActionListener {
         f.add(cp);
         f.add(cp2);
         f.add(cp1);
-        //f.pack();//packs all components within the frame
-        f.setVisible(true); //pops up the window when activated
+        f.setVisible(true);
 
 
     }

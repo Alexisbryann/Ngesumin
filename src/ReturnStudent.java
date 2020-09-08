@@ -312,7 +312,7 @@ public class ReturnStudent extends JFrame implements ActionListener {
         }
         if (e.getSource() == Home) {
             f.dispose();
-            new Home();
+            new ReturnGUI();
         }
     }
 }

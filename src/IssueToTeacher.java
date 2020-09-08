@@ -7,7 +7,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 
 public class IssueToTeacher extends JFrame implements ActionListener {
-    JFrame f = new JFrame("ISSUE TO TEACHER");
+    JFrame f = new JFrame("NGSS LIBRARY MANAGEMENT SYSTEM");
     JPanel p0,p1, p2;
     JLabel l0, l1, l2, l3, l4, l5, l6, l7, l8, l9,l10,l11;
     JTextField ID;

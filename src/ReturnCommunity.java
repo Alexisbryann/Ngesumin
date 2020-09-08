@@ -8,7 +8,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 
 public class ReturnCommunity extends JFrame implements ActionListener {
-    JFrame f = new JFrame("COMMUNITY RETURN");
+    JFrame f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
     JPanel p0,p1, p2;
     JLabel l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11,l12;
     JTextField ID,fname,sname,surname,Phone,BookTittle,BookType,Serial_Number;
@@ -248,7 +248,7 @@ public class ReturnCommunity extends JFrame implements ActionListener {
                     ReturnBook0.executeUpdate();
                     counter();
                     f.dispose();
-                    new ReturnTeacher();
+                    new ReturnCommunity();
                 } catch (SQLException | ClassNotFoundException ex) {
                     ex.printStackTrace();
                 }
@@ -326,7 +326,7 @@ public class ReturnCommunity extends JFrame implements ActionListener {
         }
         if (e.getSource() == Home) {
             f.dispose();
-            new Home();
+            new ReturnGUI();
         }
     }
 }

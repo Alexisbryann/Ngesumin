@@ -28,7 +28,7 @@ public class BooksInStore extends JFrame implements ActionListener {
         createFrame();
     }
     public void createFrame(){
-        f = new JFrame("SEARCH DATABASE");
+        f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
         f.setVisible(true);
         f.setLayout(new GridLayout());
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();

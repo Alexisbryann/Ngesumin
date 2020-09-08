@@ -8,7 +8,7 @@ import java.sql.*;
 import java.sql.DriverManager;
 
 public class RegisterBookGUI extends JFrame implements ActionListener {
-    JFrame f = new JFrame("REGISTER BOOK");
+    JFrame f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
     JPanel p1,p0;
     JPanel p2 = new JPanel(new FlowLayout());
     JPanel p3 = new JPanel(new GridLayout(4,0));
@@ -117,8 +117,8 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
         Border border3=BorderFactory.createEtchedBorder(new Color(155,17,30),new Color(8));
         p1.setBorder(border3);
         p4.setLayout(new BorderLayout());
-        Border border4 = BorderFactory.createLineBorder(new Color(0,0,49),2);
-        p4.setBorder(border4);
+//        Border border4 = BorderFactory.createLineBorder(new Color(0,0,49),2);
+        p4.setBorder(border3);
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnNames);
         table = new JTable();
@@ -155,16 +155,25 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
             ex.printStackTrace();
         }
         p4.add(scroll);
+        GridBagConstraints d = new GridBagConstraints();
+        d.weightx = 0;
+        d.weighty = 10;
+        d.anchor = GridBagConstraints.CENTER;
+        d.fill=GridBagConstraints.CENTER;
+        d.gridheight = 20;
+        d.gridwidth = 20;
+        d.ipady=20;
+        d.ipadx=20;
 
-        p2.add(Register);
+        p2.add(Register,d);
         Register.addActionListener(this);
-        p2.add(Reset);
+        p2.add(Reset,d);
         Reset.addActionListener(this);
-        p2.add(delete);
+        p2.add(delete,d);
         delete.addActionListener(this);
-        p2.add(Home);
+        p2.add(Home,d);
         Home.addActionListener(this);
-        p2.add(Logout);
+        p2.add(Logout,d);
         Logout.addActionListener(this);
 
 
@@ -253,7 +262,7 @@ public class RegisterBookGUI extends JFrame implements ActionListener {
             }
             if (e.getSource() == Home) {
                 f.dispose();
-                new community();
+                new RegisterHome();
             }
             if (e.getSource() == Reset) {
                 BookTitle.setText("");

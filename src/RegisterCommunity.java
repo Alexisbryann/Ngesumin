@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class RegisterCommunity extends JFrame implements ActionListener {
-    JFrame f = new JFrame("REGISTER COMMUNITY");
+    JFrame f = new JFrame("NGESUMIN GIRLS SECONDARY SCHOOL");
     JPanel p0,p1, p2;
     JPanel p3 = new JPanel();
     JLabel l1, l2, l3, l4, l5, l6;
@@ -138,8 +138,8 @@ public class RegisterCommunity extends JFrame implements ActionListener {
     }
     public void createTable(){
         p3.setLayout(new BorderLayout());
-        Border border2 = BorderFactory.createLineBorder(new Color(0,0,49),2);
-        p3.setBorder(border2);
+        Border border3=BorderFactory.createEtchedBorder(new Color(155,17,30),new Color(8));
+        p3.setBorder(border3);
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnNames);
         table = new JTable();
@@ -234,7 +234,7 @@ public class RegisterCommunity extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == Home) {
             f.dispose();
-            new community();
+            new RegisterHome();
         }
         if (e.getSource()==delete){
             try {

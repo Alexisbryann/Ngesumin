@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,6 +8,7 @@ public class IssueBookHome extends JFrame implements ActionListener {
     JFrame f = new JFrame("BOOK ISSUING");
     JPanel p0,p1,p2;
     JButton student,teacher,community,home,logout,quit;
+    JLabel issueBook;
     private GridBagConstraints mConstraints;
 
 
@@ -28,7 +30,7 @@ public class IssueBookHome extends JFrame implements ActionListener {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int height = screenSize.height;
         int width = screenSize.width;
-        f.setSize(width/2,height/2);
+        f.setSize(width/4,height/2);
         f.setResizable(false);
         f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -48,14 +50,19 @@ public class IssueBookHome extends JFrame implements ActionListener {
         mConstraints.ipadx = 30;
         mConstraints.ipady = 30;
 
-        p1.setLayout(new GridLayout(2,2));
+        p1.setLayout(new GridLayout(4,0));
         p1.setVisible(true);
         p1.setBackground(Color.GRAY);
         p2.setLayout(new FlowLayout());
         p2.setVisible(true);
         p2.setBackground(new Color(0,0,49));
+        Border border2 = BorderFactory.createEtchedBorder(new Color(155, 17, 30), new Color(8));
+        p2.setBorder(border2);
+        Border border1 = BorderFactory.createLineBorder(new Color(155, 17, 30), 2);
+        p0.setBorder(border1);
     }
     public void createComponents(){
+        issueBook = new JLabel("ISSUE BOOK(S) TO MEMBERS" , JLabel.CENTER);
         student = new JButton("STUDENT");
         teacher = new JButton("TEACHER");
         community = new JButton("COMMUNITY");
@@ -65,6 +72,9 @@ public class IssueBookHome extends JFrame implements ActionListener {
         p0 = new JPanel();
         p1 = new JPanel();
         p2 = new JPanel();
+        issueBook.setFont(new Font("Algerian",Font.BOLD,21));
+        issueBook.setForeground(new Color(155,17,30));
+        issueBook.setBackground(Color.GRAY);
         student.setFont(new Font("Algerian",Font.BOLD,25));
         student.setForeground(new Color(155,17,30));
         student.setBackground(Color.GRAY);
@@ -85,21 +95,22 @@ public class IssueBookHome extends JFrame implements ActionListener {
         quit.setBackground(Color.GRAY);
     }
     public void addComponentsToJPanel(){
-        GridBagConstraints d = new GridBagConstraints();
-        d.weightx = 0;
-        d.weighty = 10;
-        d.anchor = GridBagConstraints.CENTER;
-        d.fill=GridBagConstraints.CENTER;
-        d.gridheight = 10;
-        d.gridwidth = 10;
-        d.ipady=30;
-        d.ipadx=30;
+//        GridBagConstraints d = new GridBagConstraints();
+//        d.weightx = 0;
+//        d.weighty = 10;
+//        d.anchor = GridBagConstraints.CENTER;
+//        d.fill=GridBagConstraints.CENTER;
+//        d.gridheight = 10;
+//        d.gridwidth = 10;
+//        d.ipady=30;
+//        d.ipadx=30;
 
-        p1.add(student,d);
-        p1.add(teacher,d);
-        p1.add(community,d);
-        p2.add(home,d);
+        p1.add(issueBook);
+        p1.add(student);
+        p1.add(teacher);
+        p1.add(community);
 
+        p2.add(home);
         p2.add(logout);
         p2.add(quit);
 
