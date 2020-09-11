@@ -11,9 +11,9 @@ A JAVA BASED LIBRARY MANAGEMENT SYSTEM WITH THE FOLLOWING MODULES;
 ************************************
 THE SYSTEM RUNS ON THE JAVA PLATFORM AND AN EMBEDDED H2 DATABASE.
 
-![Login](https://user-images.githubusercontent.com/48671383/92730558-9df82100-f37c-11ea-9bd9-253fc78929a4.jpg)
+![Login](https://user-images.githubusercontent.com/48671383/92925510-44a6f500-f443-11ea-93fc-670b11c501f9.jpg)
 ![First dashboard](https://user-images.githubusercontent.com/48671383/92729977-d51a0280-f37b-11ea-8ba0-2d6bd2b0d9d4.jpg)
-![Issue books dashboard](https://user-images.githubusercontent.com/48671383/92729980-d6e3c600-f37b-11ea-9fcc-d14b5fcba6e0.jpg)
+![Issue books dashboard](https://user-images.githubusercontent.com/48671383/92925598-66a07780-f443-11ea-8726-0b0db8d09bdc.jpg)
 ![Issue to community member](https://user-images.githubusercontent.com/48671383/92729981-d6e3c600-f37b-11ea-9d6b-ad8e160cd367.jpg)
 ![Issue to student](https://user-images.githubusercontent.com/48671383/92729983-d77c5c80-f37b-11ea-928e-c6d4dedf4512.jpg)
 ![Issue to teacher](https://user-images.githubusercontent.com/48671383/92729985-d814f300-f37b-11ea-9351-6dcd6731e810.jpg)
